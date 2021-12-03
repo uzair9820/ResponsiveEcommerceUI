@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <title>E-Commerce</title>
+  </head>
+  <body>
+    <section id="nav-bar" class="p-2">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark rounded-3">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"><img src="Assets/Images/logo.jpg" style="height: 50px;"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="products.html">Product</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="category.html">Category</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="aboutus.html">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contactus.html">Contact Us</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <a href="search.html" class="m-auto"><button class="btn btn-outline-light m-auto" type="button">Search</button></a>
+                    </form>
+                    <div>
+                      <a href="cart.html"><img src="Assets/Images/cart.png" width="50px" class="mx-3 cart"></a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </section>  
+
+    <section id="products-main" class="d-flex justify-content-center media-phone">
+        <div id="filter-sec" class="mx-2 rounded-3 p-3">
+            <h3><u>Filters</u></h3>
+            <div id="category" class="text-center my-3">
+                <h6>Categories</h6>
+                <div class="categories m-2"><a>All<a></a></div>
+                <div class="categories m-2"><a>iPhones<a></a></div>
+                <div class="categories m-2"><a>iPad</a></div>
+                <div class="categories m-2"><a>iWatch</a></div>
+                <div class="categories m-2"><a>Airpods</a></div>
+            </div>
+            <div id="price-range" class="my-4 text-center row p-2">
+                <label for="customRange1" class="form-label">Price Range</label>
+                <input type="range" class="form-control-range" id="customRange2" min="200" max="2000" step="100">
+                <div class="d-flex justify-content-between">
+                    <label>$200</label>
+                    <label>$2000</label>
+                </div>
+            </div>
+        </div>
+        <div id="products-sec" class="d-flex flex-column rounded-3 p-3" style="margin-right:0.5rem ;">
+            <h3 class="mb-3"><u>Products</u></h3>
+            <div class="card-container">
+              <a href="product.html">
+                <div class="card-main">
+                  <div class="card-item d-flex">
+                    <div class="card-image">
+                      <img class="m-auto" src="Assets/Images/LP-iPhone.png" width="90%">
+                    </div>
+                    <div class="card-info">
+                      <h2 class="card-title">iPhone 12 Pro Max (512 GB)</h2>
+                      <p class="card-intro">$1500</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="product.html">
+                <div class="card-main">
+                  <div class="card-item">
+                    <div class="card-image">
+                      <img class="m-auto" src="Assets/Images/LP-iPhone.png" width="90%">
+                    </div>
+                    <div class="card-info">
+                      <h2 class="card-title">iPhone 12 Pro Max (256 GB)</h2>
+                      <p class="card-intro">$1200</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="product.html">
+                <div class="card-main">
+                  <div class="card-item">
+                    <div class="card-image">
+                      <img class="m-auto" src="Assets/Images/iPhone12.png" width="90%">
+                    </div>
+                    <div class="card-info">
+                      <h2 class="card-title">iPhone 12 (256 GB)</h2>
+                      <p class="card-intro">$800</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="product.html">
+                <div class="card-main">
+                  <div class="card-item">
+                    <div class="card-image">
+                      <img class="m-auto" src="Assets/Images/iPad-card.jfif" width="90%">
+                    </div>
+                    <div class="card-info">
+                      <h2 class="card-title">iPad Pro (256 GB)</h2>
+                      <p class="card-intro">$1000</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="product.html">
+                <div class="card-main">
+                  <div class="card-item">
+                    <div class="card-image">
+                      <img class="m-auto" src="Assets/Images/iWatch-card.jpg" width="90%">
+                    </div>
+                    <div class="card-info">
+                      <h2 class="card-title">iWatch Series 6</h2>
+                      <p class="card-intro">$1000</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="product.html">
+                <div class="card-main">
+                  <div class="card-item">
+                    <div class="card-image">
+                      <img class="m-auto" src="Assets/Images/AirPods-card.jpg" width="90%">
+                    </div>
+                    <div class="card-info">
+                      <h2 class="card-title">iWatch Series 6</h2>
+                      <p class="card-intro">$1000</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+        </div>    
+    </section>
+
+    <section class="d-flex m-2 rounded-3 justify-content-center row text-center p-3">
+      <div class="d-flex justify-content-around p-4 media-phone">
+        <div class="md-col-3">
+          <img src="Assets/Images/logo.jpg" height="70px" class="mb-3">
+          <p>GadgetsKart provides varieties of Premium Apple products right at your Doorstep</p>
+          <p>Since 1990</p>
+        </div>
+        <div class="md-col-3 row">
+          <h2>Quick Links</h2>
+          <a class="f-link" href="aboutus.html">About</a>
+          <a class="f-link">Discounts</a>
+          <a class="f-link" href="contactus.html">Contact</a>
+        </div>
+        <div class="md-col-3 row">
+          <h2>New Products</h2>
+          <a class="f-link" href="products.html">Iphone 12 Pro Max</a>
+          <a class="f-link" href="products.html">IPad Pro</a>
+          <a class="f-link" href="products.html">iWatch Series 6</a>
+          <a class="f-link" href="products.html">Air Pods Pro</a>
+        </div>
+        <div class="md-col-3 row">
+          <h2>Support</h2>
+          <a class="f-link">FAQ's</a>
+          <a class="f-link">Terms and Conditions</a>
+          <a class="f-link">Privacy Policy</a>
+          <a class="f-link">Report Errors</a>
+        </div>
+      </div>
+      <hr>
+      <p>Copyright ©2020 All rights reserved ©| Company Name: GadgetsKart | Designed by Uzair Ansari</p>
+    </section>
+    <div id="scroll-but" onclick="topFunction()">
+      <img src="Assets/Images/upward.png" height="45px" id="img-but">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="Assets/JS/script.js"></script>
+  </body>
+</html>
